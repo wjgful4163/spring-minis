@@ -1,0 +1,13 @@
+.idea/
+classes/
+/logs/**
+/.gradle/
+/build/
+/gradlew
+/gradlew.bat
+*.pid
+/out/**
+.gradle/
+/gradle/
+**.pid
+
