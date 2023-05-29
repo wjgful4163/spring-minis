@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        mavenCentral()
+        maven { url "https://repository.primefaces.org" }
+    }
+
+}
+
+plugins {
+    id 'java'
+}
+
+group 'com.minis'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenLocal()
+    maven {
+        url "https://maven.aliyun.com/repository/public"
+    }
+    mavenCentral()
+    maven { url "https://repository.primefaces.org" }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.dom4j:dom4j:2.1.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
